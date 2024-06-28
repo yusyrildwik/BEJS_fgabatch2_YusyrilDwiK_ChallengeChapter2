@@ -1,8 +1,8 @@
 
 
 class BankAccount {
-    constructor(account, balance){
-        this.account = account;
+    constructor(balance){
+        // this.account = account;
         this.balance = balance;
     }
 
@@ -36,6 +36,10 @@ class BankAccount {
         })
     }
 
-    
-
+    updateSaldo() {
+        const updatedSaldoDisplay = document.getElementById("saldoDisplay");
+        updatedSaldoDisplay.textContent = this.balance; 
+      }
 }
+
+const bankAccount = new BankAccount()
